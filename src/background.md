@@ -42,8 +42,8 @@ how they are generated, and on how they are evaluated.
 
 We assume that the details regarding the components of the solution
 are not exposed, nor the details of how to create or modify a
-solution. Instead, the API provides abstract operations that allow to
-generate and modify solutions in a black-box manner, and that is
+solution. Instead, the API provides abstract operations that allow
+generating and modifying solutions in a black-box manner, and that is
 common to all algorithmic approaches covered.
 
 The API relies on the observation that:
@@ -56,13 +56,13 @@ The API relies on the observation that:
   *changes* to the stored states.
 
 In both cases, such states represent **candidate solutions**. The
-changes that allow to modify a solution \\(s\\) to obtain another
+changes that allow modifying a solution \\(s\\) to obtain another
 solution \\(s'\\) is called a **move**, in which case \\(s'\\) is
 called a **neighbour** of \\(s\\).
 
 A **candidate solution** is an element of the *decision space*,
 \\(s\in S\\), but not necessarily an element of the set of feasible
-solutions. Such solution can violate constraints or satisfy other
+solutions. Such a solution can violate constraints or satisfy other
 constraints that are known to be necessary for optimal solutions. A
 candidate solution in ROAs can be:
 
@@ -91,7 +91,7 @@ way from \\(s\\) forms the **neighbourhood** set of \\(s\\),
 both complete and partial solutions**.
 
 In this specification, the neighbourhood structure is specified by
-means of a `Move` type and a `Neighbourhood` type, this latter
+means of a `Move` type and a `Neighbourhood` type, the latter
 implementing the generation of moves.
 
 ### Solution evaluation
